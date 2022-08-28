@@ -1,0 +1,32 @@
+.header {
+  background-color: $second-text-color;
+  border-bottom: 1px solid #ececec;
+  > .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation__link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $first-text-color;
+  transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

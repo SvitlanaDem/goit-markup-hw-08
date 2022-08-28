@@ -1,0 +1,55 @@
+.check-box {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.check-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $text-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+  span {
+    border: 1px solid $first-text-color;
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;
+    margin-right: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 250ms $timing-function;
+    .modal-check:checked + & {
+      background-color: $accent-color;
+      border: none;
+    }
+    .modal-check:focus + & {
+      border-color: $accent-color;
+    }
+  }
+}
+
+.check-link {
+  color: $accent-color;
+}
+
+.check-icon {
+  fill: transparent;
+  .modal-check:checked + .check-text & {
+    fill: $second-text-color;
+  }
+}
+
+.form-btn {
+  padding: 10px 52px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
