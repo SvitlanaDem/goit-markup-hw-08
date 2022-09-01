@@ -1,6 +1,8 @@
 .header {
   background-color: $second-text-color;
   border-bottom: 1px solid #ececec;
+  padding-top: 16px;
+  padding-bottom: 16px;
   > .container {
     display: flex;
     align-items: center;
@@ -8,7 +10,11 @@
 }
 
 .navigation__list {
-  display: flex;
+  // display: flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .navigation__item:not(:last-child) {
@@ -29,4 +35,45 @@
   &:focus {
     color: $accent-color;
   }
+}
+
+.open-menu {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+.open-menu {
+}
+.open-menu__icon {
+}
+.mob-menu {
+}
+.close-menu {
+}
+.mob-menu__icon {
+}
+.mob-menu__nav {
+}
+.mob-menu__list {
+}
+
+.mob-menu__item {
+}
+.mob-menu__link {
+}
+.link {
+}
+
+.mob-contacts {
+}
+.mob-contacts__item {
+}
+.mob-contacts__link {
+}
+.mob-soc__list {
+}
+.mob-soc__item {
+}
+.mob-soc__link {
 }
