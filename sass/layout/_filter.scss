@@ -1,12 +1,15 @@
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  // margin-bottom: 50px;
   margin-bottom: 40px;
-  // justify-content: center;
   gap: 8px;
   @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
